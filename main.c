@@ -75,7 +75,6 @@ void merge_sort(int array[], int left, int right){
 
     if(left < right){
         int middle = (left + right) / 2;
-        printf("middle: %i", middle);
         merge_sort(array, left, middle);
         merge_sort(array, middle + 1, right);
         merge(array, left, middle, right);
